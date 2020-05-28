@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { icons } from "assets";
-import { menus, menusTop, menusBottom } from "../constants";
+import { menus } from "../constants";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const [menuActive, setMenuActive] = useState(menusTop[0].id);
+  const [menuActive, setMenuActive] = useState(menus[0].id);
 
   return (
     <nav id="sidebar" className="container-sidebar">
@@ -25,31 +26,18 @@ const Sidebar = () => {
       </div>
 
       <ul className="list-unstyled menu ">
-        {menusTop.map((menu) => (
+        {menus.map((menu) => (
           <li
             className={menuActive === menu.id ? "active" : ""}
             key={`menu-${menu.id}`}
           >
-            <a href="#homeSubmenu" onClick={() => setMenuActive(menu.id)}>
+            <NavLink to={menu.route} onClick={() => setMenuActive(menu.id)}>
               <div className="menu-icon">
                 {menu.icon && <img src={menu.icon} alt="logo" />}
               </div>
 
               <span>{menu.label}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
-
-      <ul className="list-unstyled menu menu-bottom">
-        {menusBottom.map((menu) => (
-          <li className={menuActive === menu.id ? "active" : ""}>
-            <a href="#homeSubmenu" onClick={() => setMenuActive(menu.id)}>
-              <div className="menu-icon">
-                {menu.icon && <img src={menu.icon} alt="logo" />}
-              </div>
-              <span>{menu.label}</span>
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>

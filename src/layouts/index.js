@@ -1,12 +1,12 @@
 import React from "react";
 import Sidebar from "../components/sidebar";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <div className="container-app">
       <Sidebar />
       <main>
-        <h1>CONTENT</h1>
+        <h1>{props.children}</h1>
       </main>
     </div>
   );

@@ -33,11 +33,12 @@
     }
   }
 
-  .menu-bottom {
-    margin-top: 100px;
-  }
   .menu {
     text-align: center;
+
+    li:nth-child(6) {
+      margin-top: 100px;
+    }
 
     li.active,
     li:hover {

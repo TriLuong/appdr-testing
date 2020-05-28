@@ -1,7 +1,7 @@
-import { icons } from "../assets";
-import Home from "../pages/home";
+import { icons } from "../../assets";
+import Home from "../home";
 
-export const menus = [
+export default [
   {
     id: 1,
     icon: icons.home,
