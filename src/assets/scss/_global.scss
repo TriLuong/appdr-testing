@@ -55,3 +55,38 @@ p {
   text-align: left;
   color: var(--white-two);
 }
+
+.container-card {
+  border-radius: 7px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--white-two);
+  .card-header {
+    border-bottom: 1px solid var(--white-four);
+    background-color: var(--white-two);
+    display: flex;
+    .card-title {
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.67;
+      letter-spacing: -0.72px;
+      text-align: left;
+      color: var(--black-three);
+      border-bottom: 3px solid var(--golden-yellow);
+    }
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .sub-text {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.14;
+    letter-spacing: -0.56px;
+    text-align: left;
+    color: var(--black-three);
+  }
+}
