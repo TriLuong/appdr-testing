@@ -1,0 +1,68 @@
+.container-sidebar {
+  background-color: var(--black);
+  .sidebar-header {
+    background-color: var(--golden-yellow);
+    padding: 40px 15px 35px;
+  }
+
+  .container-account {
+    padding: 30px 15px;
+    .account-top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .avatar {
+        width: 66px;
+        height: 66px;
+        background-color: var(--golden-yellow);
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      span {
+        padding-left: 22px;
+        color: var(--white-two);
+      }
+    }
+
+    .account-bottom {
+      border-radius: 7px;
+      border: solid 1px var(--white);
+      padding: 16px 50px;
+      margin-top: 30px;
+    }
+  }
+
+  .menu-bottom {
+    margin-top: 100px;
+  }
+  .menu {
+    text-align: center;
+
+    li.active,
+    li:hover {
+      background-color: var(--black-two);
+      span {
+        color: var(--golden-yellow);
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      padding-left: 26px;
+      line-height: 3.75;
+      .menu-icon {
+        width: 30px;
+        text-align: center;
+      }
+      span {
+        align-self: flex-start;
+        padding-left: 16px;
+        flex: 1;
+      }
+    }
+  }
+}
