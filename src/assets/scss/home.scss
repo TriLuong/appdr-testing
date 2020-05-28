@@ -1,0 +1,99 @@
+.container-home {
+  padding: 30px 40px;
+  .container-process {
+    display: flex;
+    border-radius: 7px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--white-two);
+    overflow: hidden;
+    .process-title {
+      background-color: var(--warm-grey);
+      padding: 58px 60px;
+    }
+    .process-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex: 1;
+      .process-item {
+        flex-basis: 25%;
+        .process-label {
+          // font-family: NotoSansCJKkr;
+          font-size: 18px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.67;
+          letter-spacing: -0.72px;
+          text-align: center;
+          color: var(--black-three);
+        }
+        .process-time {
+          //  font-family: NotoSansCJKkr;
+          font-size: 22px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: -0.88px;
+          text-align: center;
+          color: var(--off-blue);
+          padding-bottom: 20px;
+        }
+        .process-bar {
+          //   margin-top: 20px;
+          width: 100%;
+          height: 10px;
+          border-radius: 5px;
+          background-color: var(--white-three);
+          display: flex;
+          .process-value {
+            background-color: var(--off-blue);
+            flex-basis: 0%;
+          }
+        }
+      }
+    }
+  }
+
+  .notes-coupon {
+    margin-top: 12px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--bluish-grey);
+    p {
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: -0.56px;
+      text-align: center;
+      color: var(--white-two);
+    }
+  }
+  .tabs {
+    margin-top: 28px;
+    .tab-item {
+      flex-basis: 32%;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+      background-color: var(--white-five);
+      padding: 10px 0;
+      .tab-label {
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: -0.72px;
+        text-align: center;
+        color: var(--warm-grey);
+      }
+      &.active {
+        background-color: var(--golden-yellow);
+        .tab-label {
+          color: var(--black-three);
+        }
+      }
+    }
+  }
+}

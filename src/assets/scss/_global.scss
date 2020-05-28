@@ -25,9 +25,20 @@
   --white-five: #d2d2d2;
 }
 
+@import "./sidebar.scss";
+@import "./home.scss";
+
 .container-app {
   display: flex;
   min-height: 100vh;
+  background-color: var(--white-three);
+
+  .main {
+    flex: 1;
+    margin: 40px 0;
+    border-top: 1px solid var(--white-four);
+    border-bottom: 1px solid var(--white-four);
+  }
 }
 
 span,
@@ -44,4 +55,5 @@ p {
   color: var(--white-two);
 }
 
-@import "./sidebar.scss";
+.container-content {
+}
