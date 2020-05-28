@@ -23,6 +23,7 @@
   --cherry-red: #ea0027;
   --greyish: #aaaaaa;
   --white-five: #d2d2d2;
+  --brownish-grey: #626262;
 }
 
 @import "./sidebar.scss";
@@ -53,7 +54,4 @@ p {
   letter-spacing: -0.64px;
   text-align: left;
   color: var(--white-two);
-}
-
-.container-content {
 }

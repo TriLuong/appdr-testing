@@ -96,4 +96,35 @@
       }
     }
   }
+
+  .section {
+    padding: 30px 0;
+  }
+
+  .container-procedure {
+    .text-procedure {
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 3.43;
+      letter-spacing: -0.56px;
+      text-align: left;
+      color: var(--brownish-grey);
+    }
+    .procedure-bar {
+      border-top: 1px solid var(--white-four);
+      .procedure-item {
+        flex-basis: 12%;
+        position: relative;
+        top: -10px;
+        .symbol-procedure {
+          width: 20px;
+          height: 20px;
+          background-color: var(--vibrant-green);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import ProcessItem from "../../components/home/processItem";
 import Tabs from "../../components/home/tabs";
+import Procedure from "../../components/home/procedure";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -35,12 +36,17 @@ const Home = () => {
           />
         </div>
       </div>
+
       <div className="notes-coupon">
         <p>쿠폰 유효기간( ~ 2020년 3월 10일)이 얼마 남지 않았습니다.</p>
       </div>
 
       <div className="container-tabs">
         <Tabs tabs={TABS} />
+      </div>
+
+      <div className="section">
+        <Procedure />
       </div>
     </div>
   );
