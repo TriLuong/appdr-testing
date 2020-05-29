@@ -64,7 +64,7 @@ p {
     border-bottom: 1px solid var(--white-four);
     background-color: var(--white-two);
     display: flex;
-    .card-title {
+    .card-label {
       font-size: 18px;
       font-weight: 500;
       font-stretch: normal;
@@ -79,14 +79,35 @@ p {
   .card-content {
     padding: 20px;
   }
+  .text-label {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: var(--black-three);
+  }
   .sub-text {
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 3.14;
     letter-spacing: -0.56px;
     text-align: left;
+    line-height: 3.14;
     color: var(--black-three);
   }
+}
+
+.container-show-more {
+  width: 14px;
+  height: 14px;
+  background-color: var(--warm-grey);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

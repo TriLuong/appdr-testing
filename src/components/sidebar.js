@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { icons } from "assets";
 import { menus } from "../constants";
 import { NavLink } from "react-router-dom";
+import ShowMore from "./common/showMore";
 
 const Sidebar = () => {
   const [menuActive, setMenuActive] = useState(menus[0].id);
@@ -17,7 +18,7 @@ const Sidebar = () => {
           <div className="avatar">
             <img src={icons.noAvatar} alt="account" className="w-100 h-100" />
           </div>
-          <span>Name</span>
+          <span>홍길동님</span>
         </div>
         <div className="account-bottom">
           <p>HTML 퍼블리싱</p>

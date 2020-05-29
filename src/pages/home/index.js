@@ -3,6 +3,9 @@ import ProcessItem from "../../components/home/processItem";
 import Tabs from "../../components/home/tabs";
 import Procedure from "../../components/home/procedure";
 import Card from "../../components/common/card";
+import ShowMore from "../../components/common/showMore";
+import { images } from "../../assets";
+import CardArticle from "../../components/common/cardArticle";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -50,37 +53,72 @@ const Home = () => {
         <Procedure />
       </div>
 
-      <div className="section">
-        <Card
-          title="최근 문의 / 요청 현황"
-          headerRight={
-            <div className="d-flex">
-              <p className="sub-text">더보기</p>
-              <div>></div>
-            </div>
-          }
-        >
-          <div className="row">
-            <p className="sub-text col-md-8">
-              저희가 사용중인 앱을 수정하고자 하는데 견적을 알고 싶습니다.
-            </p>
-            <p className="sub-text col-md-2 text-right">2020.01.13 </p>
-            <p className="sub-text col-md-2 text-center">담당자 확인중</p>
+      <Card
+        className="section"
+        title="최근 문의 / 요청 현황"
+        headerRight={
+          <div className="d-flex justify-content-center align-items-center">
+            <p className="sub-text mr-2">더보기</p>
+            <ShowMore />
           </div>
-          <div className="row">
-            <p className="sub-text col-md-8">
-              앱닥터 수정사항 요청하고 싶습니다. 미팅도 가능한가요? 앱닥터
-            </p>
-            <p className="sub-text col-md-2 text-right">2020.01.10</p>
-            <p className="sub-text col-md-2 text-center"> 답변 완료</p>
+        }
+      >
+        <div className="row">
+          <p className="sub-text col-md-10">
+            저희가 사용중인 앱을 수정하고자 하는데 견적을 알고 싶습니다.
+          </p>
+          <p className="sub-text col-md-1 text-right">2020.01.13 </p>
+          <p className="sub-text col-md-1 text-center">담당자 확인중</p>
+        </div>
+        <div className="row">
+          <p className="sub-text col-md-10">
+            앱닥터 수정사항 요청하고 싶습니다. 미팅도 가능한가요? 앱닥터
+          </p>
+          <p className="sub-text col-md-1 text-right">2020.01.10</p>
+          <p className="sub-text col-md-1 text-center"> 답변 완료</p>
+        </div>
+        <div className="row">
+          <p className="sub-text col-md-10">서비스 어떻게 이용하는 건가요?</p>
+          <p className="sub-text col-md-1 text-right">2020.01.01</p>
+          <p className="sub-text col-md-1 text-center">답변 완료</p>
+        </div>
+      </Card>
+
+      <Card title="앱닥터 소식" className="section">
+        <div className="row">
+          <div className="col-md-6">
+            <CardArticle
+              thumb={images.thumb}
+              thumbWidth="250px"
+              thumbHeight="250px"
+              title="앱닥터 허석균 대표, 김빛나 본부장 [아산나눔재단/MARU180]
+                  인터뷰 소식!!"
+              content="안녕하세요. 앱닥터 입니다. 오늘 알려드릴 소식은
+                  아산나눔재단/MARU180에서 진행한 인터뷰 소식입니다. 이번
+                  인터뷰의 주인공은 바로 앱닥터의 허석균 대표와 김빛나
+                  본부장입니다. MARU180의 새 식구가 된 것을 격하게 환영해 주셔서
+                  진심으로 감사한 자리였는데…"
+              isShowMore
+            />
           </div>
-          <div className="row">
-            <p className="sub-text col-md-8">서비스 어떻게 이용하는 건가요?</p>
-            <p className="sub-text col-md-2 text-right">2020.01.01</p>
-            <p className="sub-text col-md-2 text-center">답변 완료</p>
+          <div className="col-md-6 d-flex flex-column justify-content-between">
+            <CardArticle
+              thumb={images.thumb2}
+              thumbWidth="120px"
+              thumbHeight="120px"
+              title="앱닥터, 앱/웹 유지 보수 재계약 안하신 대표님들 주목~!"
+              content="“텍스트 하나만 수정하고 싶은데”, “이미지 하나 더 추가하고 싶은데” “텍스트 하나만 수정하고 싶은데”, “이미지 하나 더 추가하고 싶은데”…"
+            />
+            <CardArticle
+              thumb={images.thumb2}
+              thumbWidth="120px"
+              thumbHeight="120px"
+              title="앱닥터, 앱/웹 유지 보수 재계약 안하신 대표님들 주목~!"
+              content="“텍스트 하나만 수정하고 싶은데”, “이미지 하나 더 추가하고 싶은데” “텍스트 하나만 수정하고 싶은데”, “이미지 하나 더 추가하고 싶은데”…"
+            />
           </div>
-        </Card>
-      </div>
+        </div>
+      </Card>
     </div>
   );
 };

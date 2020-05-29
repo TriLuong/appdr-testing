@@ -9,4 +9,10 @@ export const icons = {
   download: require("./icon/download.png"),
   messages: require("./icon/messages.png"),
   noAvatar: require("./icon/noAvatar.png"),
+  arrowRight: require("./icon/arrowRight.png"),
+};
+
+export const images = {
+  thumb: require("./images/thumb.jpg"),
+  thumb2: require("./images/thumb-2.png"),
 };
