@@ -17,7 +17,7 @@ const Sidebar = () => {
           <div className="avatar">
             <img src={icons.noAvatar} alt="account" className="w-100 h-100" />
           </div>
-          <span>홍길동님</span>
+          <span className="text-sidebar">홍길동님</span>
         </div>
         <div className="account-bottom">
           <p>HTML 퍼블리싱</p>
@@ -36,7 +36,7 @@ const Sidebar = () => {
                 {menu.icon && <img src={menu.icon} alt="logo" />}
               </div>
 
-              <span>{menu.label}</span>
+              <span className="text-sidebar">{menu.label}</span>
             </NavLink>
           </li>
         ))}

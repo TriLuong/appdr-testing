@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProcessItem from "../../components/home/processItem";
 import Tabs from "../../components/home/tabs";
 import Procedure from "../../components/home/procedure";
@@ -8,6 +8,7 @@ import { images } from "../../assets";
 import CardArticle from "../../components/common/cardArticle";
 import CardIssues from "../../components/home/cardIssue";
 import { issuesApprove, issuesPending } from "../../mock/dataIssues";
+import PopupCoupon from "../../components/home/popupCoupon";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -15,7 +16,21 @@ const TABS = [
   { id: 3, label: "프로젝트" },
 ];
 
-const Home = () => {
+const Home = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const onOrder = () => {
+    console.log("onOrder");
+  };
+
+  const onService = () => {
+    props.history.push("/cart");
+  };
+
   return (
     <div className="container-home">
       <div className="container-process">
@@ -62,7 +77,7 @@ const Home = () => {
           headerRight={
             <button
               className="btn btn-popup align-self-center"
-              onClick={() => console.log("SHOW POPUP")}
+              onClick={togglePopup}
             >
               <p className="btn-popup-text">승인하러 가기</p>
             </button>
@@ -141,6 +156,12 @@ const Home = () => {
           </div>
         </div>
       </Card>
+      <PopupCoupon
+        isOpen={isOpen}
+        toggle={togglePopup}
+        onService={onService}
+        onOrder={onOrder}
+      />
     </div>
   );
 };

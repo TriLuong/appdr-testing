@@ -66,4 +66,15 @@
       }
     }
   }
+  .text-sidebar {
+    margin: 0 !important;
+    // font-family: NotoSansCJKkr;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.64px;
+    text-align: left;
+    color: var(--white-two);
+  }
 }
