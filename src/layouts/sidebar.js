@@ -18,7 +18,10 @@ const Sidebar = (props) => {
   };
 
   return (
-    <nav id="sidebar" className="container-sidebar">
+    <nav
+      id="sidebar"
+      className="container-sidebar position-fixed h-100 overflow-auto"
+    >
       <div className="sidebar-header">
         <img src={icons.logo} alt="logo" />
       </div>

@@ -34,8 +34,8 @@
   display: flex;
   min-height: 100vh;
   background-color: var(--white-three);
-
-  .main {
+  justify-content: space-between;
+  #main {
     flex: 1;
     margin: 40px 0;
     border-top: 1px solid var(--white-four);
