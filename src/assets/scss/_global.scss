@@ -24,6 +24,7 @@
   --greyish: #aaaaaa;
   --white-five: #d2d2d2;
   --brownish-grey: #626262;
+  --greyish-two: #b5b5b5;
 }
 
 @import "./sidebar.scss";
@@ -110,4 +111,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.line-height-0 {
+  line-height: 0;
 }

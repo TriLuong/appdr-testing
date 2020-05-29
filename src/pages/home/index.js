@@ -6,6 +6,8 @@ import Card from "../../components/common/card";
 import ShowMore from "../../components/common/showMore";
 import { images } from "../../assets";
 import CardArticle from "../../components/common/cardArticle";
+import CardIssues from "../../components/home/cardIssue";
+import { issuesApprove, issuesPending } from "../../mock/dataIssues";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -53,6 +55,24 @@ const Home = () => {
         <Procedure />
       </div>
 
+      <div className="d-flex justify-content-between section">
+        <Card
+          className="flex-grow-1 mr-2"
+          title="승인 대기 중인 이슈 5건"
+          headerRight={
+            <div className="d-flex justify-content-center align-items-center">
+              <p className="sub-text mr-2">더보기</p>
+              <ShowMore />
+            </div>
+          }
+        >
+          <CardIssues data={issuesPending} />
+        </Card>
+        <Card className="flex-grow-1 ml-2" title="승인 대기 중인 이슈 14건">
+          <CardIssues data={issuesApprove} />
+        </Card>
+      </div>
+
       <Card
         className="section"
         title="최근 문의 / 요청 현황"
@@ -67,19 +87,19 @@ const Home = () => {
           <p className="sub-text col-md-10">
             저희가 사용중인 앱을 수정하고자 하는데 견적을 알고 싶습니다.
           </p>
-          <p className="sub-text col-md-1 text-right">2020.01.13 </p>
+          <p className="text-time col-md-1 text-right">2020.01.13 </p>
           <p className="sub-text col-md-1 text-center">담당자 확인중</p>
         </div>
         <div className="row">
           <p className="sub-text col-md-10">
             앱닥터 수정사항 요청하고 싶습니다. 미팅도 가능한가요? 앱닥터
           </p>
-          <p className="sub-text col-md-1 text-right">2020.01.10</p>
+          <p className="text-time col-md-1 text-right">2020.01.10</p>
           <p className="sub-text col-md-1 text-center"> 답변 완료</p>
         </div>
         <div className="row">
           <p className="sub-text col-md-10">서비스 어떻게 이용하는 건가요?</p>
-          <p className="sub-text col-md-1 text-right">2020.01.01</p>
+          <p className="text-time col-md-1 text-right">2020.01.01</p>
           <p className="sub-text col-md-1 text-center">답변 완료</p>
         </div>
       </Card>

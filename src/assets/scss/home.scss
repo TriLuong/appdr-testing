@@ -127,4 +127,71 @@
       }
     }
   }
+
+  .container-card-issue {
+    padding: 15px 10px 15px 30px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: solid 1px var(--white-four);
+    background-color: var(--pale-grey);
+    height: 80px;
+
+    .text-status {
+      font-size: 12px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: -0.48px;
+      text-align: center;
+      color: var(--greyish-brown);
+    }
+    .status-indicator {
+      width: 10px;
+      height: 10px;
+      background-color: var(--vibrant-green);
+      border-radius: 50%;
+    }
+    .card-issue {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .container-issue-number {
+        background-color: var(--topaz);
+        padding: 8.5px 15px;
+        .issue-number {
+          font-size: 14px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          letter-spacing: -0.56px;
+          text-align: left;
+          color: var(--white-two);
+        }
+      }
+      .issue-name {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.64px;
+        text-align: left;
+        color: var(--black-three);
+        margin: 0;
+      }
+      .highlight {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .text-time {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.14;
+    letter-spacing: -0.56px;
+    text-align: right;
+    color: var(--warm-grey-two);
+  }
 }

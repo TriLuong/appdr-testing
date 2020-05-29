@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { icons } from "assets";
 import { menus } from "../constants";
 import { NavLink } from "react-router-dom";
-import ShowMore from "./common/showMore";
 
 const Sidebar = () => {
   const [menuActive, setMenuActive] = useState(menus[0].id);
