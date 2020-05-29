@@ -1,12 +1,13 @@
 import { icons } from "../assets";
 import Home from "../pages/home";
+import ServicePurchase from "../pages/servicePurchase";
 
 export const menus = [
   {
     id: 1,
     icon: icons.home,
     label: "대시보드",
-    route: "/home",
+    route: "/",
     component: Home,
   },
   {
@@ -21,7 +22,7 @@ export const menus = [
     icon: icons.cart,
     label: "서비스 구매",
     route: "/cart",
-    component: Home,
+    component: ServicePurchase,
   },
   {
     id: 4,

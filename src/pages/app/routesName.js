@@ -1,12 +1,13 @@
 import { icons } from "../../assets";
 import Home from "../home";
+import ServicePurchase from "../servicePurchase";
 
 export default [
   {
     id: 1,
     icon: icons.home,
     label: "대시보드",
-    route: "/home",
+    route: "/",
     component: Home,
   },
   {
@@ -21,7 +22,7 @@ export default [
     icon: icons.cart,
     label: "서비스 구매",
     route: "/cart",
-    component: Home,
+    component: ServicePurchase,
   },
   {
     id: 4,

@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { icons } from "assets";
 import { menus } from "../constants";
-import { NavLink } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
-const Sidebar = () => {
-  const [menuActive, setMenuActive] = useState(menus[0].id);
+const Sidebar = (props) => {
+  const [menuActive, setMenuActive] = useState(props.location.pathname);
+
+  useEffect(() => {
+    if (props.location.pathname !== menuActive) {
+      setMenuActive(props.location.pathname);
+    }
+  }, [props.location.pathname, menuActive]);
+
+  const onChangeMenu = (event) => {
+    const { to } = event.target;
+    setMenuActive(to);
+  };
 
   return (
     <nav id="sidebar" className="container-sidebar">
@@ -28,10 +39,10 @@ const Sidebar = () => {
       <ul className="list-unstyled menu ">
         {menus.map((menu) => (
           <li
-            className={menuActive === menu.id ? "active" : ""}
-            key={`menu-${menu.id}`}
+            className={menuActive === menu.route ? "active" : ""}
+            key={`menu-${menu.route}`}
           >
-            <NavLink to={menu.route} onClick={() => setMenuActive(menu.id)}>
+            <NavLink to={menu.route} onClick={onChangeMenu}>
               <div className="menu-icon">
                 {menu.icon && <img src={menu.icon} alt="logo" />}
               </div>
@@ -45,4 +56,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default withRouter(Sidebar);

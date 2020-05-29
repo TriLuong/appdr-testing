@@ -25,10 +25,12 @@ const Home = (props) => {
 
   const onOrder = () => {
     console.log("onOrder");
+    togglePopup();
   };
 
   const onService = () => {
     props.history.push("/cart");
+    togglePopup();
   };
 
   return (

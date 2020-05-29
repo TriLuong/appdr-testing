@@ -3,5 +3,5 @@
     "target": "es6",
     "baseUrl": "./src"
   },
-  "include": ["src/*", "src/pages/app/App.js"]
+  "include": ["src/*"]
 }

@@ -13,6 +13,7 @@ const App = () => {
         {routesName.map((route) => (
           <Route
             key={`route-${route.id}`}
+            exact
             path={route.route}
             component={route.component}
           />
