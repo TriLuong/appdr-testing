@@ -11,7 +11,11 @@ const App = () => {
     <Layout>
       <Switch>
         {routesName.map((route) => (
-          <Route path={route.route} component={route.component} />
+          <Route
+            key={`route-${route.id}`}
+            path={route.route}
+            component={route.component}
+          />
         ))}
       </Switch>
     </Layout>

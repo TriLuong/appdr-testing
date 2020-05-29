@@ -1,17 +1,18 @@
 import React from "react";
 
 const procedures = [
-  { text: "문의/요청", color: "var(--topaz-two)" },
-  { text: "요청 분석", color: "var(--topaz-two)" },
-  { text: "승인대기중", color: "var(--topaz-two)" },
-  { text: "개발자 배정", color: "var(--french-blue)" },
-  { text: "진행중", color: "var(--french-blue)" },
-  { text: "개발완료", color: "var(--french-blue)" },
+  { id: 1, text: "문의/요청", color: "var(--topaz-two)" },
+  { id: 2, text: "요청 분석", color: "var(--topaz-two)" },
+  { id: 3, text: "승인대기중", color: "var(--topaz-two)" },
+  { id: 4, text: "개발자 배정", color: "var(--french-blue)" },
+  { id: 5, text: "진행중", color: "var(--french-blue)" },
+  { id: 6, text: "개발완료", color: "var(--french-blue)" },
   {
+    id: 7,
     text: "고객 검수",
     color: "var(--french-blue)",
   },
-  { text: "개발종료", color: "var(--vibrant-green)" },
+  { id: 8, text: "개발종료", color: "var(--vibrant-green)" },
 ];
 
 const Procedure = () => {
@@ -22,7 +23,7 @@ const Procedure = () => {
       </p>
       <div className=" d-flex justify-content-around align-items-center procedure-bar">
         {procedures.map((procedure) => (
-          <div className="procedure-item">
+          <div className="procedure-item" key={`procedure-${procedure.id}`}>
             <div
               className="symbol-procedure m-auto"
               style={{ backgroundColor: procedure.color }}

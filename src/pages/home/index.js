@@ -60,10 +60,12 @@ const Home = () => {
           className="flex-grow-1 mr-2"
           title="승인 대기 중인 이슈 5건"
           headerRight={
-            <div className="d-flex justify-content-center align-items-center">
-              <p className="sub-text mr-2">더보기</p>
-              <ShowMore />
-            </div>
+            <button
+              className="btn btn-popup align-self-center"
+              onClick={() => console.log("SHOW POPUP")}
+            >
+              <p className="btn-popup-text">승인하러 가기</p>
+            </button>
           }
         >
           <CardIssues data={issuesPending} />

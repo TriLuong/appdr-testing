@@ -33,7 +33,7 @@ export const issuesPending = [
 
 export const issuesApprove = [
   {
-    id: 1,
+    id: 6,
     name: "서버 – 댓글 기능 업데이트",
     time: "32H",
     isApproved: true,
@@ -41,7 +41,7 @@ export const issuesApprove = [
     date: "2019.04.09",
   },
   {
-    id: 2,
+    id: 8,
     name: "안드로이드 – 운영서버와 테스트 서버 연결 빌드 생성",
     time: "15H",
     isApproved: true,
@@ -49,7 +49,7 @@ export const issuesApprove = [
     date: "2019.04.09",
   },
   {
-    id: 3,
+    id: 9,
     name: "안드로이드 소스 분석",
     time: "32H",
     isApproved: true,
@@ -57,7 +57,7 @@ export const issuesApprove = [
     date: "2019.04.09",
   },
   {
-    id: 4,
+    id: 10,
     name: "안드로이드 – 운영서버와 테스트 서버 연결 빌드 생성",
     time: "15H",
     isApproved: true,
@@ -65,7 +65,7 @@ export const issuesApprove = [
     date: "2019.04.09",
   },
   {
-    id: 5,
+    id: 11,
     name: "안드로이드 소스 분석",
     time: "32H",
     isApproved: true,

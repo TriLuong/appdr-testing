@@ -194,4 +194,17 @@
     text-align: right;
     color: var(--warm-grey-two);
   }
+  .btn-popup {
+    background-color: var(--warm-grey);
+  }
+  .btn-popup-text {
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.84px;
+    text-align: right;
+    color: var(--white-two);
+    margin: 0;
+  }
 }

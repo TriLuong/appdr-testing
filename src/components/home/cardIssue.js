@@ -1,11 +1,10 @@
 import React from "react";
 
 const CardIssues = ({ data }) => {
-  console.log("data", data);
   return (
     <div>
       {data.map((item) => (
-        <div className="container-card-issue">
+        <div className="container-card-issue" key={`issue-${item.id}`}>
           <div
             className={`d-flex justify-content-end align-items-center ${
               item.isApproved ? "" : "invisible"
