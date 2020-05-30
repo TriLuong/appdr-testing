@@ -25,10 +25,12 @@
   --white-five: #d2d2d2;
   --brownish-grey: #626262;
   --greyish-two: #b5b5b5;
+  --black-four: #000000;
 }
 
 @import "./sidebar.scss";
 @import "./home.scss";
+@import "./servicePurchase.scss";
 
 .container-app {
   display: flex;

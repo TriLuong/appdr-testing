@@ -9,7 +9,13 @@ const Layout = (props) => {
     document.getElementById("main").style.marginLeft = `${widthSidebar}px`;
   }, [window.screen.width]);
   return (
-    <div className="container-app">
+    <div
+      className="container-app"
+      style={{
+        backgroundColor:
+          props.location.pathname === "/cart" ? "var(--white-two)" : "",
+      }}
+    >
       <Sidebar />
       <main id="main">{props.children}</main>
     </div>

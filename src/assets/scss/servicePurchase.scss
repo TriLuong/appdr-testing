@@ -1,0 +1,81 @@
+.container-service-purchase {
+  margin: 0 340px 0 170px;
+  height: 100%;
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -1.2px;
+    text-align: left;
+    color: var(--black-four);
+    padding-left: 58px;
+    padding-top: 42px;
+  }
+
+  .tabs {
+    padding-left: 42px;
+    .tab-item {
+      padding-bottom: 0;
+      width: 120px;
+      .tab-label {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.81;
+        letter-spacing: -0.64px;
+        text-align: center;
+        color: var(--warm-grey-two);
+      }
+      &.active {
+        border-bottom: 2px solid var(--golden-yellow);
+        .tab-label {
+          color: var(--black-three);
+        }
+      }
+    }
+  }
+
+  .container-banner {
+    padding: 52px 42px;
+    .banner-left {
+      flex-basis: 45%;
+    }
+    .banner-title {
+      font-size: 26px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.73;
+      letter-spacing: -1.04px;
+      text-align: left;
+      color: var(--black-three);
+    }
+    .banner-content {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: -0.64px;
+      text-align: left;
+      color: var(--black-three);
+    }
+    .banner-button {
+      background-color: var(--white-five);
+      width: 370px;
+      flex-basis: 45%;
+      .btn-text {
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.8px;
+        text-align: left;
+        color: var(--warm-grey);
+        text-align: center;
+      }
+    }
+  }
+}
