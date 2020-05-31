@@ -4,6 +4,7 @@ import OrderAndPayment from "../orderAndPayment";
 import CompanyInfo from "../companyInfo";
 import path from "./path";
 import RequestStatus from "../requestStatus";
+import IssueDetail from "../issueDetail";
 
 export default [
   {
@@ -30,5 +31,10 @@ export default [
     id: 5,
     route: path.requestStatus,
     component: RequestStatus,
+  },
+  {
+    id: 5,
+    route: path.issueDetail,
+    component: IssueDetail,
   },
 ];

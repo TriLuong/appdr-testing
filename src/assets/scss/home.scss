@@ -195,6 +195,13 @@
     text-align: right;
     color: var(--warm-grey-two);
   }
+
+  .container-issue-request {
+    cursor: pointer;
+    &:hover {
+      background-color: var(--pale-grey);
+    }
+  }
   .btn-popup {
     background-color: var(--warm-grey);
   }

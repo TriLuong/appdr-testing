@@ -41,6 +41,10 @@ const Home = (props) => {
     props.history.push(path.requestStatus);
   };
 
+  const onDetailIssue = (id) => {
+    props.history.push(`/issue/${id}`);
+  };
+
   return (
     <div className="container-home">
       <div className="container-process">
@@ -107,7 +111,11 @@ const Home = (props) => {
       >
         {dataIssueRequest.length !== 0 &&
           dataIssueRequest.map((item) => (
-            <IssueRequest key={`request-issue-${item.id}`} data={item} />
+            <IssueRequest
+              key={`request-issue-${item.id}`}
+              data={item}
+              onDetail={onDetailIssue}
+            />
           ))}
       </Card>
 

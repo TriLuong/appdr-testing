@@ -10,4 +10,5 @@ export default {
   account: "/account",
   logout: "/logout",
   companyInfo: "/company-info",
+  issueDetail: "/issue/:id",
 };
