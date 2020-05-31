@@ -1,8 +1,9 @@
+import path from "./path";
+
 import Home from "../home";
 import ServicePurchase from "../servicePurchase";
 import OrderAndPayment from "../orderAndPayment";
 import CompanyInfo from "../companyInfo";
-import path from "./path";
 import RequestStatus from "../requestStatus";
 import IssueDetail from "../issueDetail";
 

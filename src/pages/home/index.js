@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import ProcessItem from "../../components/home/processItem";
-import Tabs from "../../components/home/tabs";
-import Procedure from "../../components/home/procedure";
-import Card from "../../components/common/card";
-import ShowMore from "../../components/common/showMore";
-import { images } from "../../assets";
-import CardArticle from "../../components/common/cardArticle";
-import CardIssues from "../../components/home/cardIssue";
-import { issuesApprove, issuesPending } from "../../mock/dataIssues";
-import path from "../app/path";
-import Popup from "../../components/common/popup";
-import dataIssueRequest from "../../mock/dataIssueRequest";
-import IssueRequest from "../../components/home/issueRequest";
+import { images } from "assets";
+import path from "pages/app/path";
+
+import {
+  ProcessItem,
+  Tabs,
+  Procedure,
+  CardIssues,
+  IssueRequest,
+} from "components/home";
+
+import { Card, ShowMore, CardArticle, Popup } from "components/common";
+
+import { dataIssues, dataIssueRequest } from "mock";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -97,10 +98,10 @@ const Home = (props) => {
             </button>
           }
         >
-          <CardIssues data={issuesPending} />
+          <CardIssues data={dataIssues.issuesPending} />
         </Card>
         <Card className="flex-grow-1 ml-2" title="승인 대기 중인 이슈 14건">
-          <CardIssues data={issuesApprove} />
+          <CardIssues data={dataIssues.issuesApprove} />
         </Card>
       </div>
 

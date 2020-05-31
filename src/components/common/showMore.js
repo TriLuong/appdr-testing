@@ -1,5 +1,5 @@
 import React from "react";
-import { icons } from "../../assets";
+import { icons } from "assets";
 
 const ShowMore = ({ onShowMore }) => {
   return (

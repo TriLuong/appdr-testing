@@ -73,3 +73,5 @@ export const issuesApprove = [
     date: "2019.04.09",
   },
 ];
+
+export default { issuesApprove, issuesPending };

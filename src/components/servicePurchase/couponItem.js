@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { images } from "../../assets";
-import imgCoupon from "../../assets/images/coupon.png";
+import imgCoupon from "assets/images/coupon.png";
 
 const styleCoupon = {
   backgroundImage: `url("${imgCoupon}")`,

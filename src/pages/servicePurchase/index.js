@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Tabs from "../../components/servicePurchase/tabs";
-import CouponItem from "../../components/servicePurchase/couponItem";
-import dataCoupon from "../../mock/dataCoupon";
-import path from "../app/path";
-import Popup from "../../components/common/popup";
+import { Tabs, CouponItem } from "components/servicePurchase";
+import { dataCoupon } from "mock";
+import path from "pages/app/path";
+import { Popup } from "components/common";
 
 const TABS = [
   { id: 1, label: "추천" },
