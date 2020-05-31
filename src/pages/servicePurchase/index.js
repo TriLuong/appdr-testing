@@ -12,7 +12,7 @@ const ServicePurchase = () => {
   return (
     <div className="container-service-purchase border-right border-left">
       <h2 className="title">서비스 구매</h2>
-      <Tabs tabs={TABS} className="mt-5" />
+      <Tabs tabs={TABS} className="mt-5" disabledTab={1} />
 
       <div className="d-flex justify-content-between border-bottom container-banner">
         <div className="banner-left">
