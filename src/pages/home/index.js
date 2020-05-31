@@ -9,6 +9,7 @@ import CardArticle from "../../components/common/cardArticle";
 import CardIssues from "../../components/home/cardIssue";
 import { issuesApprove, issuesPending } from "../../mock/dataIssues";
 import PopupCoupon from "../../components/home/popupCoupon";
+import path from "../app/path";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -25,11 +26,12 @@ const Home = (props) => {
 
   const onOrder = () => {
     console.log("onOrder");
+    props.history.push(path.orderAndPayment);
     togglePopup();
   };
 
   const onService = () => {
-    props.history.push("/cart");
+    props.history.push(path.purchase);
     togglePopup();
   };
 

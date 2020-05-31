@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Sidebar from "./sidebar";
 import { withRouter } from "react-router-dom";
+import path from "../pages/app/path";
 
 const Layout = (props) => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Layout = (props) => {
       className="container-app"
       style={{
         backgroundColor:
-          props.location.pathname === "/"
+          props.location.pathname === path.home
             ? "var(--white-three)"
             : "var(--white-two)",
       }}
