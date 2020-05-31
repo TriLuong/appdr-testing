@@ -34,8 +34,8 @@ const Sidebar = (props) => {
           <span className="text-sidebar">홍길동님</span>
         </div>
         <div className="account-bottom">
-          <p>HTML 퍼블리싱</p>
-          <p>빠른 견적 시스템</p>
+          <p className="text-quick">HTML 퍼블리싱</p>
+          <p className="text-quick">빠른 견적 시스템</p>
         </div>
       </div>
 

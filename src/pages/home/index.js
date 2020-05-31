@@ -8,8 +8,8 @@ import { images } from "../../assets";
 import CardArticle from "../../components/common/cardArticle";
 import CardIssues from "../../components/home/cardIssue";
 import { issuesApprove, issuesPending } from "../../mock/dataIssues";
-import PopupCoupon from "../../components/home/popupCoupon";
 import path from "../app/path";
+import Popup from "../../components/common/popup";
 
 const TABS = [
   { id: 1, label: "시간제 쿠폰 서비스" },
@@ -160,12 +160,20 @@ const Home = (props) => {
           </div>
         </div>
       </Card>
-      <PopupCoupon
+      <Popup
         isOpen={isOpen}
         toggle={togglePopup}
-        onService={onService}
-        onOrder={onOrder}
-      />
+        title="쿠폰 구매"
+        textBtnLeft="시간제 쿠폰 구매하기"
+        textBtnRight="30 시간만 구매하기"
+        onBtnLeft={onService}
+        onBtnRight={onOrder}
+      >
+        <div>
+          승인하기 위해 시간이 부족해 시간 구매가 필요합니다. 원하시는
+          구매형태를 선택해주세요
+        </div>
+      </Popup>
     </div>
   );
 };

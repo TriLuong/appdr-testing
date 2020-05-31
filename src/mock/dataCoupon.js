@@ -8,6 +8,7 @@ export default [
     costPerHour: 35000,
     expired: "3개월",
     isChange: false,
+    hasInfo: true,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export default [
     costPerHour: 30000,
     expired: "6개월",
     isChange: true,
+    hasInfo: false,
   },
   {
     id: 3,
@@ -28,5 +30,6 @@ export default [
     costPerHour: 26250,
     expired: "3개월",
     isChange: true,
+    hasInfo: false,
   },
 ];

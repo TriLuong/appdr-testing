@@ -8,7 +8,7 @@ const styleCoupon = {
   height: "100px",
 };
 
-const Coupondata = ({ className, data }) => {
+const Coupondata = ({ className, data, onBuy }) => {
   const [numberCoupon, setCoupon] = useState(1);
 
   const increaseCoupon = () => {
@@ -56,7 +56,7 @@ const Coupondata = ({ className, data }) => {
         </div>
       </div>
 
-      <div className="container-buy">
+      <div className="container-buy" onClick={() => onBuy(data.hasInfo)}>
         <p className="text-buy">구매하기</p>
       </div>
       <div className="position-absolute container-note">

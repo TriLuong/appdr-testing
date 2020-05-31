@@ -9,4 +9,5 @@ export default {
   paymentHistory: "/payment-history",
   account: "/account",
   logout: "/logout",
+  companyInfo: "/company-info",
 };

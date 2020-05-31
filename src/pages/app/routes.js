@@ -1,6 +1,7 @@
 import Home from "../home";
 import ServicePurchase from "../servicePurchase";
 import OrderAndPayment from "../orderAndPayment";
+import CompanyInfo from "../companyInfo";
 import path from "./path";
 
 export default [
@@ -18,5 +19,10 @@ export default [
     id: 3,
     route: path.orderAndPayment,
     component: OrderAndPayment,
+  },
+  {
+    id: 4,
+    route: path.companyInfo,
+    component: CompanyInfo,
   },
 ];
