@@ -1,5 +1,5 @@
 .container-service-purchase {
-  margin: 0 340px 0 170px;
+  margin: 0 15% 0 170px;
   height: 100%;
   .title {
     font-size: 30px;
@@ -77,5 +77,118 @@
         text-align: center;
       }
     }
+  }
+
+  .container-coupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    .coupon {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .text-coupon {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.56px;
+        text-align: center;
+        color: var(--black-three);
+        background-color: var(--golden-yellow);
+        padding: 1px 5px;
+      }
+      .percent-coupon {
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.96px;
+        text-align: center;
+        color: var(--black-three);
+      }
+    }
+    .value-coupon {
+      font-size: 26px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: -1.04px;
+      text-align: center;
+      color: var(--cherry-red);
+      flex-basis: 25%;
+    }
+    .container-count-coupon {
+      text-align: center;
+      display: flex;
+      .box-coupon {
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+      }
+      .adjust-count {
+        background-color: var(--greyish);
+        cursor: pointer;
+      }
+      .text-adjust {
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.72px;
+        text-align: center;
+        color: var(--white-two);
+      }
+      .text-count {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.56px;
+        text-align: center;
+        color: var(--black-three);
+        display: inline-block;
+        text-align: center;
+      }
+    }
+    .container-buy {
+      background-color: var(--black-three);
+      .text-buy {
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.64px;
+        text-align: center;
+        color: var(--white-two);
+        padding: 5px 40px;
+        margin: 0;
+      }
+    }
+    .container-note {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .text-note {
+        font-size: 13px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: -0.52px;
+        text-align: right;
+        color: var(--greyish-brown);
+      }
+    }
+  }
+
+  .section-coupon {
+    margin: 30px 129px 30px 42px;
   }
 }

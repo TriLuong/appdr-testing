@@ -15,4 +15,5 @@ export const icons = {
 export const images = {
   thumb: require("./images/thumb.jpg"),
   thumb2: require("./images/thumb-2.png"),
+  coupon: require("./images/coupon.png"),
 };
