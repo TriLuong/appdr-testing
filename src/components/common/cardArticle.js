@@ -26,7 +26,6 @@ const CardArticle = ({
         </p>
         {isShowMore && (
           <div className="d-flex justify-content-end align-items-center">
-            <p className="sub-text mr-2">더보기</p>
             <ShowMore />
           </div>
         )}

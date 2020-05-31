@@ -102,14 +102,17 @@ p {
 }
 
 .container-show-more {
-  width: 14px;
-  height: 14px;
-  background-color: var(--warm-grey);
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
+  .icon-show-more {
+    width: 14px;
+    height: 14px;
+    background-color: var(--warm-grey);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .line-height-0 {

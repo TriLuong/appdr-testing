@@ -37,6 +37,10 @@ const Home = (props) => {
     togglePopup();
   };
 
+  const onShowMoreRequest = () => {
+    props.history.push(path.requestStatus);
+  };
+
   return (
     <div className="container-home">
       <div className="container-process">
@@ -99,12 +103,7 @@ const Home = (props) => {
       <Card
         className="section"
         title="최근 문의 / 요청 현황"
-        headerRight={
-          <div className="d-flex justify-content-center align-items-center">
-            <p className="sub-text mr-2">더보기</p>
-            <ShowMore />
-          </div>
-        }
+        headerRight={<ShowMore onShowMore={onShowMoreRequest} />}
       >
         {dataIssueRequest.length !== 0 &&
           dataIssueRequest.map((item) => (

@@ -3,6 +3,7 @@ import ServicePurchase from "../servicePurchase";
 import OrderAndPayment from "../orderAndPayment";
 import CompanyInfo from "../companyInfo";
 import path from "./path";
+import RequestStatus from "../requestStatus";
 
 export default [
   {
@@ -24,5 +25,10 @@ export default [
     id: 4,
     route: path.companyInfo,
     component: CompanyInfo,
+  },
+  {
+    id: 5,
+    route: path.requestStatus,
+    component: RequestStatus,
   },
 ];
