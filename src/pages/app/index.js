@@ -5,6 +5,7 @@ import routesName from "./routesName";
 
 import "../../assets/scss/_global.scss";
 import "bootstrap/dist/css/bootstrap.css";
+import Page404 from "../page404";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             component={route.component}
           />
         ))}
+        <Route path="" component={Page404} />
       </Switch>
     </Layout>
   );

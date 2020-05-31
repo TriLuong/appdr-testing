@@ -13,7 +13,9 @@ const Layout = (props) => {
       className="container-app"
       style={{
         backgroundColor:
-          props.location.pathname === "/cart" ? "var(--white-two)" : "",
+          props.location.pathname === "/"
+            ? "var(--white-three)"
+            : "var(--white-two)",
       }}
     >
       <Sidebar />
